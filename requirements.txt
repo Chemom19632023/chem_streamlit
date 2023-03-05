@@ -1,4 +1,4 @@
 rdkit-pypi
 scikit-learn
-streamlit==1.8.1
+streamlit
 protobuf==3.20
