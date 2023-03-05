@@ -1,4 +1,3 @@
-# datamaker.py
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit.Chem import DataStructs
@@ -10,7 +9,7 @@ def mol2fp(mol):
     arr = np.zeros((0,))
     DataStructs.ConvertToNumpyArray(fp, arr)
     return arr
- 
+
 def make_data(sdf):
     mols = [m for m in Chem.SDMolSupplier(sdf) if m !=None]
     X = np.array([mol2fp(m) for m in mols])

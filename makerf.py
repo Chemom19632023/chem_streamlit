@@ -1,9 +1,8 @@
-#makerf.py
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 import datamaker
 import pickle
- 
+
 sdf = './solubility.train.sdf'
 rfc = RandomForestClassifier()
 x, y = datamaker.make_data(sdf)
